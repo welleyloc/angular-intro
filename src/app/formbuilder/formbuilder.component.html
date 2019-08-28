@@ -1,0 +1,15 @@
+<div class="jumbotron">
+    <h2>Form with editing component (FormBuilder)</h2>
+    <p>The update button changes the data in the submitted model object (see console).</p>
+</div>
+<div class="container">
+    <form [formGroup]="userForm" (ngSubmit)="submit()">
+
+        <p><label>Name: <input formControlName="name" type="text"></label></p>
+        <p><label>Gender: <input formControlName="gender" type="text"></label></p>
+        <p><label>State: <input formControlName="state" type="text"></label></p>
+        <p><button type="submit">Submit</button>
+    </form>
+    <p><button (click)="updateInfo()">Update</button></p>
+
+</div>

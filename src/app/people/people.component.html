@@ -1,0 +1,27 @@
+<div class="jumbotron">
+    <h2>A list of people (via dependency injection)
+    </h2>
+    <p>This page is a continuation of the previous task, where typescript was originally used to generate employee data via
+            innerHTML. Part 2 here utilizes Angular dependency injection to get each person's data from a separate local source.
+            <font color="red">The observables are intentionally delayed for 4 seconds to database retrieval delay. Please wait for the list to
+            appear.</font></p>
+</div>
+<div style="padding: 10px">
+    <br>
+    <ul class="people">
+        <li *ngFor="let person of people">
+            <div class="peopleOutput">
+                <h5>{{ person.name }}</h5>
+                <div><span>id: </span>{{ person.id }}</div>
+                <div><span>gender: </span>{{ person.gender }}</div>
+                <div><span>age: </span>{{ person.age }}</div>
+                <div><span>phone no.: </span>{{ person.phoneNumber }}</div>
+                <div><span>state: </span>{{ person.state }}</div>
+                <div><span>zip code: </span>{{ person.zipCode }}</div>
+                <div><span>occupation: </span>{{ person.occupation }}</div>
+                <div><span>hourly wage: </span>{{ person.hourlyWage }}</div>
+            </div><br>
+        </li>
+    </ul>
+
+</div>

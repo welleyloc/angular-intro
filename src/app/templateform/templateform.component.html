@@ -1,0 +1,18 @@
+<div class="jumbotron">
+    <h2>Template Driven Form (ngModel)</h2>
+    <p>This form will print the submitted details in the console to simulate "save". No input fields are required for submission.</p>
+</div>
+<div class="container">
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+        <p><label>ID: <input type="text" [(ngModel)]="user.id" name="id"></label></p>
+        <p><label>Name: <input type="text" [(ngModel)]="user.name" name="name"></label></p>
+        <p><label>Gender: <input type="text" [(ngModel)]="user.gender" name="gender"></label></p>
+        <p><label>Age: <input type="number" [(ngModel)]="user.age" name="age"></label></p>
+        <p><label>Phone: <input type="text" [(ngModel)]="user.phoneNumber" name="phone"></label></p>
+        <p><label>State: <input type="text" [(ngModel)]="user.state" name="state"></label></p>
+        <p><label>Zip Code: <input type="text" [(ngModel)]="user.zipCode" name="zip"></label></p>
+        <p><label>Occupation: <input type="text" [(ngModel)]="user.occupation" name="occupation"></label></p>
+        <p><label>Hourly Wage: <input type="text" [(ngModel)]="user.hourlyWage" name="hourlywage"></label></p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+</div>

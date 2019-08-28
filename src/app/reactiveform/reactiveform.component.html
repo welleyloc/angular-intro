@@ -1,0 +1,20 @@
+<div class="jumbotron">
+    <h2>Reactive Model Form (FormGroup/FormControl)</h2>
+    <p>This form utilizes validation for required fields and will print the submitted details in the console to simulate "save".</p>
+</div>
+<div class="container">
+    <p>Fields with <font color="red">*</font> are required.</p>
+    <form [formGroup]="personForm" (ngSubmit)="showInfo()">
+        <p><label>ID: <input type="text" formControlName="id"></label></p>
+        <p><label><font color="red">*</font> Name: <input type="text" formControlName="name" required></label></p>
+        <p><label><font color="red">*</font> Occupation: <input type="text" formControlName="occupation" required></label></p>
+        <p><label>Gender: <input type="text" formControlName="gender"></label></p>
+        <p><label>Age: <input type="number" formControlName="age"></label></p>
+        <p><label> Phone: <input type="text" formControlName="phone"></label></p>
+        <p><label>State: <input type="text" formControlName="state"></label></p>
+        <p><label>Zip Code: <input type="text" formControlName="zipcode"></label></p>
+        <p><label>Hourly Wage: <input type="number" formControlName="hourly"></label></p>        
+        <p>Form status (valid with all required fields): {{ personForm.status }}</p>
+        <p><button [disabled]="!personForm.valid">Submit</button></p>
+    </form>
+</div>

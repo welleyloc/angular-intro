@@ -1,0 +1,20 @@
+<div class="jumbotron">
+    <h2>Animation (BrowserAnimationModule)</h2>
+    <p>The buttons are connected to multiple states from an animation trigger to display boxes of different sizes and opacity.</p>
+</div>
+<div class="container" style="width: 500px; margin-top: 50px; margin-bottom: 50px;">
+    <div class="row">
+        <div class="col col-md-2">{{ state }}</div>
+        <div class="col col-md-2"><button (click)="changeState('Xsmall')" class="click">Xsmall</button>
+        </div>
+        <div class="col col-md-2"><button (click)="changeState('Small')" class="click">Small</button>
+        </div>
+        <div class="col col-md-2"><button (click)="changeState('Medium')" class="click">Medium</button>
+        </div>
+        <div class="col col-md-2"><button (click)="changeState('Large')" class="click">Large</button>
+        </div>
+        <div class="col col-md-2"><button (click)="changeState('Xlarge')" class="click">Xlarge</button>
+        </div>
+    </div><p></p>
+    <div [@transition]="state" class="transition"></div>
+</div>

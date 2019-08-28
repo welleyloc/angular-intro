@@ -1,0 +1,7 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.ui-button-info  {
+    color: #ffffff;
+    background-color: #007ad9;
+    border: 1px solid #007ad9;
+}
