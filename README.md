@@ -2,7 +2,7 @@
 
 Full introduction assignment to Angular and its imports.
 
-Each component is independent and fulfills individual tasks for various assignments, but they are condensed into one project here for brevity. [Live page here](https://welleyloc.github.io/Angular-Intro/defaultpage)
+Each component is independent and fulfills individual tasks for various assignments, but they are condensed into one project here for brevity. [Live page here](https://welleyloc.github.io/angular-intro/)
 
 **Components**
 
